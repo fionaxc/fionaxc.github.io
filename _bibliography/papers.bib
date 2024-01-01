@@ -1,84 +1,72 @@
 ---
----
+@article{Cai2021,
+  title = {Improving the Efficiency of Clinical Trial Recruitment Using an Ensemble Machine Learning to Assist With Eligibility Screening},
+  volume = {3},
+  ISSN = {2578-5745},
+  abstract = {Objective
+Efficiently identifying eligible patients is a crucial first step for a successful clinical trial. The objective of this study was to test whether an approach using electronic health record (EHR) data and an ensemble machine learning algorithm incorporating billing codes and data from clinical notes processed by natural language processing (NLP) can improve the efficiency of eligibility screening.
 
-@string{aps = {American Physical Society,}}
+Methods
+We studied patients screened for a clinical trial of rheumatoid arthritis (RA) with one or more International Classification of Diseases (ICD) code for RA and age greater than 35 years, from a tertiary care center and a community hospital. The following three groups of EHR features were considered for the algorithm: 1) structured features, 2) the counts of NLP concepts from notes, 3) health care utilization. All features were linked to dates. We applied random forest and logistic regression with least absolute shrinkage and selection operator penalty against the following two standard approaches: 1) one or more RA ICD code and no ICD codes related to exclusion criteria (ScreenRAICD1+EX) and 2) two or more RA ICD codes (ScreenRAICD2). To test the portability, we trained the algorithm at one institution and tested it at the other.
 
-@book{einstein1956investigations,
-  bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation},
-  preview={brownian-motion.gif}
+Results
+In total, 3359 patients at Brigham and Women’s Hospital (BWH) and 642 patients at Faulkner Hospital (FH) were studied, with 461 (13.7%) eligible patients at BWH and 84 (13.4%) at FH. The application of the algorithm reduced ineligible patients from chart review by 40.5% at the tertiary care center and by 57.0% at the community hospital. In contrast, ScreenRAICD2 reduced patients for chart review by 2.7% to 11.3%; ScreenRAICD1+EX reduced patients for chart review by 63% to 65% but excluded 22% to 27% of eligible patients.
+
+Conclusion
+The ensemble machine learning algorithm incorporating billing codes and NLP data increased the efficiency of eligibility screening by reducing the number of patients requiring chart review while not excluding eligible patients. Moreover, this approach can be trained at one institution and applied at another for multicenter clinical trials.},
+  url = {http://dx.doi.org/10.1002/acr2.11289},
+  html ={http://dx.doi.org/10.1002/acr2.11289},
+  DOI = {10.1002/acr2.11289},
+  number = {9},
+  journal = {ACR Open Rheumatology},
+  publisher = {Wiley},
+  author = {Cai,  Tianrun and Cai,  Fiona and Dahal,  Kumar P. and Cremone,  Gabrielle and Lam,  Ethan and Golnik,  Charlotte and Seyok,  Thany and Hong,  Chuan and Cai,  Tianxi and Liao,  Katherine P.},
+  year = {2021},
+  month = jul,
+  pages = {593–600},
+  selected = {true},
+  preview = {eml_preview.png},
+
+
 }
 
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers}
+@article{Sinnott2018,
+  title = {PheProb: probabilistic phenotyping using diagnosis codes to improve power for genetic association studies},
+  volume = {25},
+  ISSN = {1527-974X},
+  url = {http://dx.doi.org/10.1093/jamia/ocy056},
+  html = {http://dx.doi.org/10.1093/jamia/ocy056},
+  abstract = {Objective: Standard approaches for large scale phenotypic screens using electronic health record (EHR) data apply thresholds, such as ≥2 diagnosis codes, to define subjects as having a phenotype. However, the variation in the accuracy of diagnosis codes can impair the power of such screens. Our objective was to develop and evaluate an approach which converts diagnosis codes into a probability of a phenotype (PheProb). We hypothesized that this alternate approach for defining phenotypes would improve power for genetic association studies.
+
+Methods: The PheProb approach employs unsupervised clustering to separate patients into 2 groups based on diagnosis codes. Subjects are assigned a probability of having the phenotype based on the number of diagnosis codes. This approach was developed using simulated EHR data and tested in a real world EHR cohort. In the latter, we tested the association between low density lipoprotein cholesterol (LDL-C) genetic risk alleles known for association with hyperlipidemia and hyperlipidemia codes (ICD-9 272.x). PheProb and thresholding approaches were compared.
+
+Results: Among n = 1462 subjects in the real world EHR cohort, the threshold-based p-values for association between the genetic risk score (GRS) and hyperlipidemia were 0.126 (≥1 code), 0.123 (≥2 codes), and 0.142 (≥3 codes). The PheProb approach produced the expected significant association between the GRS and hyperlipidemia: p = .001.
+
+Conclusions: PheProb improves statistical power for association studies relative to standard thresholding approaches by leveraging information about the phenotype in the billing code counts. The PheProb approach has direct applications where efficient approaches are required, such as in Phenome-Wide Association Studies.},
+  DOI = {10.1093/jamia/ocy056},
+  number = {10},
+  journal = {Journal of the American Medical Informatics Association},
+  publisher = {Oxford University Press (OUP)},
+  author = {Sinnott,  Jennifer A and Cai,  Fiona and Yu,  Sheng and Hejblum,  Boris P and Hong,  Chuan and Kohane,  Isaac S and Liao,  Katherine P},
+  year = {2018},
+  month = may,
+  pages = {1359–1365},
+  selected = {true},
+  preview = {pheprob_preview.png}
 }
 
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein, A. and Podolsky, B. and Rosen, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  altmetric={248277},
-  dimensions={true},
-  selected={true}
-}
-
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
-}
-
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.},
-  volume={17},
-  pages={549--560},
-  year={1905}
-}
-
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
-}
-
-@book{przibram1967letters,
-  bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif}
+@article{Fernandez2021,
+  title = {On-Body Piezoelectric Energy Harvesters through Innovative Designs and Conformable Structures},
+  volume = {9},
+  ISSN = {2373-9878},
+  url = {http://dx.doi.org/10.1021/acsbiomaterials.1c00800},
+  DOI = {10.1021/acsbiomaterials.1c00800},
+  number = {5},
+  journal = {ACS Biomaterials Science &amp; Engineering},
+  publisher = {American Chemical Society (ACS)},
+  author = {Fernandez,  Sara V. and Cai,  Fiona and Chen,  Sophia and Suh,  Emma and Tiepelt,  Jan and McIntosh,  Rachel and Marcus,  Colin and Acosta,  Daniel and Mejorado,  David and Dagdeviren,  Canan},
+  year = {2021},
+  month = nov,
+  pages = {2070–2086},
+  selected = {false}
 }
