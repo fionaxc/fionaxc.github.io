@@ -17,8 +17,7 @@ social: false  # includes social icons at the bottom of the page
 ---
 ---
 
-Hi! I am an MEng student at MIT in the <a href="https://caml.csail.mit.edu/" target="_blank">MIT Clinical and Applied Machine Learning Group</a>, advised by <a href="https://people.csail.mit.edu/guttag/" target="_blank">Prof. John Guttag</a>. 
-I am broadly interested the intersection of machine learning, computer vision, representation learning and its application to healthcare. I previously received my B.S. in Computer Science from MIT in 2023.
+Hi! I am a first-year Ph.D. student in Biomedical Data Science at Stanford University. I previously completed my MEng at MIT in the <a href="https://caml.csail.mit.edu/" target="_blank">MIT Clinical and Applied Machine Learning Group</a>, advised by <a href="https://people.csail.mit.edu/guttag/" target="_blank">Prof. John Guttag</a>, and received my B.S. in Computer Science from MIT in 2023. My current research interests lie at the intersection of machine learning, computer vision, and representation learning and their applications to healthcare and medical imaging. In the past, I have worked on clinical informatics problems using traditional statistical machine learning approaches for tasks like clinical trial recruitment and probabilistic phenotyping.
 
 ---
 
