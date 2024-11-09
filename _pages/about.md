@@ -2,11 +2,11 @@
 layout: about
 title: about
 permalink: /
-subtitle: MEng student | EECS @ MIT
+subtitle: PhD @ Stanford | Previously CS @ MIT
 
 profile:
   align: right
-  image: fionacai.jpg
+  image: fionacai2.jpg
   image_circular: false # crops the image to make it circular
   image_size: 1000 # controls the image size
 
@@ -17,7 +17,9 @@ social: false  # includes social icons at the bottom of the page
 ---
 ---
 
-Hi! I am a first-year Ph.D. student in Biomedical Data Science at Stanford University. I previously completed my MEng at MIT in the <a href="https://caml.csail.mit.edu/" target="_blank">MIT Clinical and Applied Machine Learning Group</a>, advised by <a href="https://people.csail.mit.edu/guttag/" target="_blank">Prof. John Guttag</a>, and received my B.S. in Computer Science from MIT in 2023. My current research interests lie at the intersection of machine learning, computer vision, and representation learning and their applications to healthcare and medical imaging. In the past, I have worked on clinical informatics problems using traditional statistical machine learning approaches for tasks like clinical trial recruitment and probabilistic phenotyping.
+Hi! I am a first-year Ph.D. student in Biomedical Data Science at Stanford University. My current research interests lie at the intersection of machine learning, computer vision, and representation learning and their applications to healthcare and medical imaging. My work is supported by the <a href="https://www.nsfgrfp.org/" target="_blank"> NSF Graduate Research Fellowship </a>.
+
+I previously completed my B.S and M.Eng in Computer Science at Massachusetts Institute of Technology (MIT), where I was advised by <a href="https://people.csail.mit.edu/guttag/" target="_blank">Prof. John Guttag</a>.  In the past, I have worked on clinical informatics problems using traditional statistical machine learning approaches for tasks like clinical trial recruitment and probabilistic phenotyping.
 
 ---
 
