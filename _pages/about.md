@@ -6,10 +6,9 @@ subtitle: PhD @ Stanford | Previously CS @ MIT
 
 profile:
   align: right
-  image: fionacai4.jpeg
+  image: fc.png
   image_circular: false # crops the image to make it circular
   image_size: 1000 # controls the image size
-  additional_style: "transform: rotate(-90deg);"
 
 news: false  # includes a list of news items
 latest_posts: false  # includes a list of the newest posts
