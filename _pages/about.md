@@ -23,4 +23,4 @@ I previously completed my B.S and M.Eng in Computer Science at Massachusetts Ins
 
 ---
 
-<a href="mailto:fcai@mit.edu"> Email </a> / <a href="https://scholar.google.com/citations?user=9h7KpuAAAAAJ&hl=en"> Google Scholar </a> / <a href="https://www.linkedin.com/in/fiona-cai/"> LinkedIn </a> / <a href="https://twitter.com/fionaxcai"> Twitter </a>
+<a href="mailto:fionacai@stanford.edu"> Email </a> / <a href="https://scholar.google.com/citations?user=9h7KpuAAAAAJ&hl=en"> Google Scholar </a> / <a href="https://www.linkedin.com/in/fiona-cai/"> LinkedIn </a> / <a href="https://twitter.com/fionaxcai"> Twitter </a>
