@@ -6,7 +6,7 @@ subtitle: PhD @ Stanford | Previously CS @ MIT
 
 profile:
   align: right
-  image: fc_grad25.jpg
+  image: fc_grad25.jpeg
   image_circular: false # crops the image to make it circular
   image_size: 1000 # controls the image size
 
