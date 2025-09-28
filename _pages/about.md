@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: PhD @ Stanford | Previously CS @ MIT
+# subtitle: PhD @ Stanford | Previously CS @ MIT
 
 profile:
   align: right
@@ -17,7 +17,7 @@ social: false  # includes social icons at the bottom of the page
 ---
 ---
 
-Hi! I am a first-year Ph.D. student in Biomedical Data Science at Stanford University. My current research interests lie at the intersection of machine learning, computer vision, and representation learning and their applications to healthcare and medical imaging. My work is supported by the <a href="https://www.nsfgrfp.org/" target="_blank"> NSF Graduate Research Fellowship </a>.
+Hi! I'm a second year PhD student in the Department of Biomedical Data Science at Stanford University where I am fortunate to be advised by <a href="https://emilyalsentzer.com/" target="_blank">Emily Alsentzer</a> and <a href="https://ai.stanford.edu/~syyeung/" target="_blank">Serena Yeung-Levy</a>. My current research interests lie at the intersection of machine learning, computer vision, and representation learning and their applications to healthcare and medical imaging. My work is supported by the <a href="https://www.nsfgrfp.org/" target="_blank"> NSF Graduate Research Fellowship </a>.
 
 I previously completed my B.S and M.Eng in Computer Science at Massachusetts Institute of Technology (MIT), where I was advised by <a href="https://caml.csail.mit.edu/" target="_blank">Prof. John Guttag</a>.  In the past, I have worked on clinical informatics problems using traditional statistical machine learning approaches for tasks like clinical trial recruitment and probabilistic phenotyping.
 
