@@ -73,6 +73,10 @@ body.sticky-bottom-footer { padding-bottom: 0; }
     line-height: 1.8;
     color: var(--global-text-color);
     p { margin-bottom: 0.75rem; }
+    p:last-child {
+      color: var(--global-text-color-light);
+      font-size: 0.9rem;
+    }
     a {
       color: var(--global-theme-color);
       text-decoration: none;
@@ -99,7 +103,7 @@ body.sticky-bottom-footer { padding-bottom: 0; }
  * Papers & Projects
  ******************************************************************************/
 
-.papers-section, .projects-section {
+.papers-section {
   padding: 0.75rem 0 1.5rem;
 
   h2 {
@@ -108,6 +112,19 @@ body.sticky-bottom-footer { padding-bottom: 0; }
     margin-bottom: 0.75rem;
     color: var(--global-text-color-light);
     text-transform: lowercase;
+  }
+}
+
+.projects-section {
+  padding: 0.75rem 0 1.5rem;
+
+  h2 {
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+    color: var(--global-text-color-light);
+    text-transform: lowercase;
+    font-style: italic;
   }
 }
 
