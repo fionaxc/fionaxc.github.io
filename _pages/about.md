@@ -51,6 +51,6 @@ social: false
 
 Hi! I'm a second year PhD student in the Department of Biomedical Data Science at Stanford University where I am fortunate to be advised by [Emily Alsentzer](https://emilyalsentzer.com/) and [Serena Yeung-Levy](https://ai.stanford.edu/~syyeung/). My current research interests lie at the intersection of machine learning, computer vision, and representation learning and their applications to healthcare and medical imaging. My work is supported by the [NSF Graduate Research Fellowship](https://www.nsfgrfp.org/).
 
-I previously completed my B.S and M.Eng in Computer Science at Massachusetts Institute of Technology (MIT), where I was advised by [Prof. John Guttag](https://caml.csail.mit.edu/). In the past, I have worked on clinical informatics problems using traditional statistical machine learning approaches for tasks like clinical trial recruitment and probabilistic phenotyping.
+I previously completed my B.S and M.Eng in Computer Science at MIT, where I was advised by [Prof. John Guttag](https://caml.csail.mit.edu/). In the past, I have worked on clinical informatics problems using traditional statistical machine learning approaches for tasks like clinical trial recruitment and probabilistic phenotyping.
 
 Outside of research, I love to travel and I'm a huge fan of strategy and card games — ask me anything about polytopia, catan, dominion, poker, guan dan, da guai lu zi :)
