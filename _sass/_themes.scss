@@ -3,25 +3,19 @@
  ******************************************************************************/
 
 :root {
-  --global-bg-color: #faf8f5;
+  --global-bg-color: #fdfdfc;
   --global-code-bg-color: #{$code-bg-color-light};
-  --global-text-color: #3a3633;
-  --global-text-color-light: #918a82;
-  --global-theme-color: #8b7355;
-  --global-hover-color: #6b5740;
+  --global-text-color: #2c2926;
+  --global-text-color-light: #8a8279;
+  --global-theme-color: #7d6b57;
+  --global-hover-color: #5c4d3e;
   --global-hover-text-color: #{$white-color};
-  --global-footer-bg-color: #faf8f5;
-  --global-footer-text-color: #918a82;
-  --global-footer-link-color: #8b7355;
+  --global-footer-bg-color: #fdfdfc;
+  --global-footer-text-color: #8a8279;
+  --global-footer-link-color: #7d6b57;
   --global-distill-app-color: #{$grey-color};
-  --global-divider-color: #e8e2da;
-  --global-card-bg-color: #f3efe9;
-
-  // pastel accents
-  --pastel-sage: #d4dcd0;
-  --pastel-blush: #e8d5cd;
-  --pastel-lavender: #d5cfe0;
-  --pastel-sky: #cdd8e4;
+  --global-divider-color: #e6e1db;
+  --global-card-bg-color: #f5f2ee;
 
   .fa-sun { display: none; }
   .fa-moon { display: none; }

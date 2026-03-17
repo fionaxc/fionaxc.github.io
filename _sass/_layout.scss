@@ -17,25 +17,13 @@ body {
     scroll-margin-top: 66px;
     font-family: $system-font;
     font-weight: 500;
-    text-transform: lowercase;
   }
 }
 
-body.fixed-top-nav {
-  padding-top: 56px;
-}
-
-body.sticky-bottom-footer {
-  padding-bottom: 0;
-}
-
-.container {
-  max-width: $max-content-width;
-}
-
-.profile {
-  img { width: 100%; }
-}
+body.fixed-top-nav { padding-top: 10px; }
+body.sticky-bottom-footer { padding-bottom: 0; }
+.container { max-width: $max-content-width; }
+.profile img { width: 100%; }
 
 
 /******************************************************************************
@@ -43,7 +31,7 @@ body.sticky-bottom-footer {
  ******************************************************************************/
 
 .about-hero {
-  padding: 3rem 0 1.5rem;
+  padding: 2.5rem 0 1.5rem;
 
   .hero-content {
     display: flex;
@@ -59,40 +47,32 @@ body.sticky-bottom-footer {
   .hero-text { flex: 1; }
 
   .hero-image {
-    flex: 0 0 220px;
-
+    flex: 0 0 210px;
     @media (max-width: 768px) {
       flex: 0 0 auto;
       width: 170px;
       margin: 0 auto;
     }
-
     img {
       width: 100%;
-      border-radius: 8px;
+      border-radius: 6px;
     }
   }
 
   .hero-name {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 500;
     color: var(--global-text-color);
     margin-bottom: 1rem;
     line-height: 1.15;
-    text-transform: lowercase;
-
-    @media (max-width: 768px) {
-      font-size: 1.7rem;
-    }
+    @media (max-width: 768px) { font-size: 1.5rem; }
   }
 
   .hero-bio {
     font-size: 0.93rem;
     line-height: 1.8;
     color: var(--global-text-color);
-
     p { margin-bottom: 0.75rem; }
-
     a {
       color: var(--global-theme-color);
       text-decoration: none;
@@ -102,50 +82,30 @@ body.sticky-bottom-footer {
 
   .hero-links {
     margin-top: 1.25rem;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.35rem;
+    font-size: 0.88rem;
+    color: var(--global-text-color-light);
 
     a {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.3rem;
-      padding: 0.25rem 0.65rem;
-      font-size: 0.82rem;
-      color: var(--global-text-color);
-      background: var(--global-card-bg-color);
-      border: 1px solid var(--global-divider-color);
-      border-radius: 5px;
+      color: var(--global-text-color-light);
       text-decoration: none;
-      transition: all 0.15s;
-
-      &:nth-child(4n+1) { border-left: 2px solid var(--pastel-sage); }
-      &:nth-child(4n+2) { border-left: 2px solid var(--pastel-blush); }
-      &:nth-child(4n+3) { border-left: 2px solid var(--pastel-lavender); }
-      &:nth-child(4n+4) { border-left: 2px solid var(--pastel-sky); }
-
-      &:hover {
-        background: var(--global-divider-color);
-        text-decoration: none;
-      }
-
-      i { font-size: 0.78rem; color: var(--global-text-color-light); }
+      transition: color 0.15s;
+      &:hover { color: var(--global-theme-color); }
     }
   }
 }
 
 
 /******************************************************************************
- * Papers (inline on landing page)
+ * Papers & Projects
  ******************************************************************************/
 
-.papers-section {
-  padding: 1rem 0 2.5rem;
+.papers-section, .projects-section {
+  padding: 0.75rem 0 1.5rem;
 
   h2 {
-    font-size: 1.05rem;
+    font-size: 0.95rem;
     font-weight: 500;
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
     color: var(--global-text-color-light);
     text-transform: lowercase;
   }
@@ -157,39 +117,27 @@ ul.papers-list {
   margin: 0;
 
   li {
-    padding: 0.85rem 0;
+    padding: 0.6rem 0;
     border-bottom: 1px solid var(--global-divider-color);
     display: flex;
     flex-direction: column;
-    gap: 0.15rem;
+    gap: 0.1rem;
 
-    &:first-child {
-      border-top: 1px solid var(--global-divider-color);
-    }
+    &:first-child { border-top: 1px solid var(--global-divider-color); }
 
     .paper-title {
-      font-size: 0.93rem;
-      font-weight: 500;
+      font-size: 0.92rem;
+      font-weight: 450;
       color: var(--global-text-color);
       text-decoration: none;
-      text-transform: lowercase;
       transition: color 0.15s;
-
-      &:hover {
-        color: var(--global-theme-color);
-        text-decoration: none;
-      }
+      &:hover { color: var(--global-theme-color); text-decoration: none; }
     }
 
-    .paper-authors {
-      font-size: 0.82rem;
-      color: var(--global-text-color-light);
-    }
-
-    .paper-venue {
+    .paper-meta {
       font-size: 0.8rem;
       color: var(--global-text-color-light);
-      font-style: italic;
+      line-height: 1.5;
     }
   }
 }

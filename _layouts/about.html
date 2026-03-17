@@ -7,7 +7,7 @@ layout: default
   <div class="about-hero">
     <div class="hero-content">
       <div class="hero-text">
-        <h1 class="hero-name">{{ site.first_name | downcase }} {{ site.middle_name | downcase }} {{ site.last_name | downcase }}</h1>
+        <h1 class="hero-name">fiona x. cai</h1>
 
         <div class="hero-bio">
           {{ content }}
@@ -15,12 +15,7 @@ layout: default
 
         {% if page.links %}
         <div class="hero-links">
-          {% for link in page.links %}
-          <a href="{{ link.url }}" target="_blank">
-            {% if link.icon %}<i class="{{ link.icon }}"></i>{% endif %}
-            {{ link.label }}
-          </a>
-          {% endfor %}
+          {% for link in page.links %}{% if forloop.first == false %} / {% endif %}<a href="{{ link.url }}" target="_blank">{{ link.label }}</a>{% endfor %}
         </div>
         {% endif %}
       </div>
@@ -32,7 +27,7 @@ layout: default
         {% if page.profile.image_circular %}
           {%- assign profile_image_class = "img-fluid rounded-circle" -%}
         {% endif %}
-        {% capture sizes %}(min-width: {{site.max_width}}) 240px, 180px{% endcapture %}
+        {% capture sizes %}(min-width: {{site.max_width}}) 220px, 170px{% endcapture %}
         {% include figure.html
           path = profile_image_path
           class = profile_image_class
@@ -52,8 +47,21 @@ layout: default
       {% for paper in page.papers %}
       <li>
         <a href="{{ paper.url }}" target="_blank" class="paper-title">{{ paper.title }}</a>
-        <span class="paper-authors">{{ paper.authors }}</span>
-        <span class="paper-venue">{{ paper.venue }}</span>
+        <span class="paper-meta">{{ paper.authors }} · {{ paper.venue }}</span>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+
+  {% if page.projects %}
+  <div class="projects-section">
+    <h2>projects</h2>
+    <ul class="papers-list">
+      {% for project in page.projects %}
+      <li>
+        <a href="{{ project.url }}" target="_blank" class="paper-title">{{ project.title }}</a>
+        <span class="paper-meta">{{ project.description }}</span>
       </li>
       {% endfor %}
     </ul>
