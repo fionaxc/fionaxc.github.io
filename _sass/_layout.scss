@@ -9,7 +9,7 @@ body {
   color: var(--global-text-color);
   background-color: var(--global-bg-color);
   font-family: $system-font;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
 
@@ -47,10 +47,10 @@ body.sticky-bottom-footer { padding-bottom: 0; }
   .hero-text { flex: 1; }
 
   .hero-image {
-    flex: 0 0 210px;
+    flex: 0 0 260px;
     @media (max-width: 768px) {
       flex: 0 0 auto;
-      width: 170px;
+      width: 190px;
       margin: 0 auto;
     }
     img {
@@ -69,13 +69,13 @@ body.sticky-bottom-footer { padding-bottom: 0; }
   }
 
   .hero-bio {
-    font-size: 0.93rem;
+    font-size: 1rem;
     line-height: 1.8;
     color: var(--global-text-color);
     p { margin-bottom: 0.75rem; }
     p:last-child {
       color: var(--global-text-color-light);
-      font-size: 0.9rem;
+      font-size: 0.95rem;
     }
     a {
       color: var(--global-theme-color);
@@ -143,7 +143,7 @@ ul.papers-list {
     &:first-child { border-top: 1px solid var(--global-divider-color); }
 
     .paper-title {
-      font-size: 0.92rem;
+      font-size: 0.98rem;
       font-weight: 450;
       color: var(--global-text-color);
       text-decoration: none;
@@ -152,7 +152,7 @@ ul.papers-list {
     }
 
     .paper-meta {
-      font-size: 0.8rem;
+      font-size: 0.88rem;
       color: var(--global-text-color-light);
       line-height: 1.5;
     }

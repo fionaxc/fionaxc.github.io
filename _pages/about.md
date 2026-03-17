@@ -49,8 +49,8 @@ selected_papers: false
 social: false
 ---
 
-hi! i'm a second year phd student in the department of biomedical data science at stanford university where i am fortunate to be advised by [Emily Alsentzer](https://emilyalsentzer.com/) and [Serena Yeung-Levy](https://ai.stanford.edu/~syyeung/). my current research interests lie at the intersection of machine learning, computer vision, and representation learning and their applications to healthcare and medical imaging. my work is supported by the [NSF Graduate Research Fellowship](https://www.nsfgrfp.org/).
+Hi! I'm a second year PhD student in the Department of Biomedical Data Science at Stanford University where I am fortunate to be advised by [Emily Alsentzer](https://emilyalsentzer.com/) and [Serena Yeung-Levy](https://ai.stanford.edu/~syyeung/). My current research interests lie at the intersection of machine learning, computer vision, and representation learning and their applications to healthcare and medical imaging. My work is supported by the [NSF Graduate Research Fellowship](https://www.nsfgrfp.org/).
 
-i previously completed my b.s and m.eng in computer science at mit, where i was advised by [Prof. John Guttag](https://caml.csail.mit.edu/). in the past, i have worked on clinical informatics problems using traditional statistical machine learning approaches for tasks like clinical trial recruitment and probabilistic phenotyping.
+I previously completed my B.S and M.Eng in Computer Science at Massachusetts Institute of Technology (MIT), where I was advised by [Prof. John Guttag](https://caml.csail.mit.edu/). In the past, I have worked on clinical informatics problems using traditional statistical machine learning approaches for tasks like clinical trial recruitment and probabilistic phenotyping.
 
-outside of research, i love to travel and i'm a huge fan of strategy and card games — ask me anything about polytopia, catan, dominion, poker, guan dan, da guai lu zi :)
+Outside of research, I love to travel and I'm a huge fan of strategy and card games — ask me anything about polytopia, catan, dominion, poker, guan dan, da guai lu zi :)
