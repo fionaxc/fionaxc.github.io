@@ -1,6 +1,5 @@
 /*******************************************************************************
- * Variables used throughout the theme.
- * To adjust anything, simply edit the variables below and rebuild the theme.
+ * Variables
  ******************************************************************************/
 
 // Colors
@@ -30,8 +29,8 @@ $grey-900:            #212529;
 $white-color: #ffffff !default;
 $black-color: #000000 !default;
 
-// Theme colors - clean, minimal accent
-$theme-color:         #2c3e50 !default;
+// Earthy theme color
+$theme-color:         #5c4a3a !default;
 
 $code-bg-color-light:     rgba($theme-color, 0.05);
 $code-bg-color-dark:      #2c3237 !default;
