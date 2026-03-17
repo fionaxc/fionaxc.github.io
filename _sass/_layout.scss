@@ -16,7 +16,8 @@ body {
   h1, h2, h3, h4, h5, h6 {
     scroll-margin-top: 66px;
     font-family: $system-font;
-    font-weight: 600;
+    font-weight: 500;
+    text-transform: lowercase;
   }
 }
 
@@ -33,14 +34,12 @@ body.sticky-bottom-footer {
 }
 
 .profile {
-  img {
-    width: 100%;
-  }
+  img { width: 100%; }
 }
 
 
 /******************************************************************************
- * Hero / About
+ * Hero
  ******************************************************************************/
 
 .about-hero {
@@ -57,16 +56,14 @@ body.sticky-bottom-footer {
     }
   }
 
-  .hero-text {
-    flex: 1;
-  }
+  .hero-text { flex: 1; }
 
   .hero-image {
-    flex: 0 0 240px;
+    flex: 0 0 220px;
 
     @media (max-width: 768px) {
       flex: 0 0 auto;
-      width: 180px;
+      width: 170px;
       margin: 0 auto;
     }
 
@@ -77,33 +74,24 @@ body.sticky-bottom-footer {
   }
 
   .hero-name {
-    font-size: 2.2rem;
-    font-weight: 600;
+    font-size: 2rem;
+    font-weight: 500;
     color: var(--global-text-color);
-    margin-bottom: 0.2rem;
+    margin-bottom: 1rem;
     line-height: 1.15;
+    text-transform: lowercase;
 
     @media (max-width: 768px) {
-      font-size: 1.8rem;
-    }
-  }
-
-  .hero-affiliation {
-    font-size: 0.95rem;
-    color: var(--global-text-color-light);
-    margin-bottom: 1.25rem;
-
-    a {
-      color: var(--global-theme-color);
-      text-decoration: none;
-      &:hover { text-decoration: underline; }
+      font-size: 1.7rem;
     }
   }
 
   .hero-bio {
-    font-size: 0.95rem;
-    line-height: 1.75;
+    font-size: 0.93rem;
+    line-height: 1.8;
     color: var(--global-text-color);
+
+    p { margin-bottom: 0.75rem; }
 
     a {
       color: var(--global-theme-color);
@@ -116,14 +104,14 @@ body.sticky-bottom-footer {
     margin-top: 1.25rem;
     display: flex;
     flex-wrap: wrap;
-    gap: 0.4rem;
+    gap: 0.35rem;
 
     a {
       display: inline-flex;
       align-items: center;
-      gap: 0.35rem;
-      padding: 0.3rem 0.75rem;
-      font-size: 0.85rem;
+      gap: 0.3rem;
+      padding: 0.25rem 0.65rem;
+      font-size: 0.82rem;
       color: var(--global-text-color);
       background: var(--global-card-bg-color);
       border: 1px solid var(--global-divider-color);
@@ -131,95 +119,77 @@ body.sticky-bottom-footer {
       text-decoration: none;
       transition: all 0.15s;
 
+      &:nth-child(4n+1) { border-left: 2px solid var(--pastel-sage); }
+      &:nth-child(4n+2) { border-left: 2px solid var(--pastel-blush); }
+      &:nth-child(4n+3) { border-left: 2px solid var(--pastel-lavender); }
+      &:nth-child(4n+4) { border-left: 2px solid var(--pastel-sky); }
+
       &:hover {
-        background: var(--global-theme-color);
-        color: white;
-        border-color: var(--global-theme-color);
+        background: var(--global-divider-color);
         text-decoration: none;
       }
 
-      i { font-size: 0.8rem; }
+      i { font-size: 0.78rem; color: var(--global-text-color-light); }
     }
   }
 }
 
 
 /******************************************************************************
- * Research Areas
+ * Papers (inline on landing page)
  ******************************************************************************/
 
-.research-areas {
-  padding: 1rem 0 2rem;
+.papers-section {
+  padding: 1rem 0 2.5rem;
 
   h2 {
-    font-size: 1.2rem;
-    font-weight: 600;
+    font-size: 1.05rem;
+    font-weight: 500;
     margin-bottom: 1rem;
-    color: var(--global-text-color);
+    color: var(--global-text-color-light);
+    text-transform: lowercase;
   }
+}
 
-  .areas-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
+ul.papers-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 
-    @media (max-width: 768px) {
-      grid-template-columns: 1fr;
-    }
-  }
+  li {
+    padding: 0.85rem 0;
+    border-bottom: 1px solid var(--global-divider-color);
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
 
-  .area-card {
-    background: var(--global-card-bg-color);
-    border-radius: 8px;
-    padding: 1.25rem;
-    transition: transform 0.15s;
-
-    &:hover {
-      transform: translateY(-1px);
+    &:first-child {
+      border-top: 1px solid var(--global-divider-color);
     }
 
-    .area-title {
-      font-size: 0.95rem;
-      font-weight: 600;
-      margin-bottom: 0.4rem;
+    .paper-title {
+      font-size: 0.93rem;
+      font-weight: 500;
       color: var(--global-text-color);
+      text-decoration: none;
+      text-transform: lowercase;
+      transition: color 0.15s;
+
+      &:hover {
+        color: var(--global-theme-color);
+        text-decoration: none;
+      }
     }
 
-    .area-description {
-      font-size: 0.85rem;
+    .paper-authors {
+      font-size: 0.82rem;
       color: var(--global-text-color-light);
-      line-height: 1.6;
+    }
+
+    .paper-venue {
+      font-size: 0.8rem;
+      color: var(--global-text-color-light);
+      font-style: italic;
     }
   }
 }
-
-
-/******************************************************************************
- * Publications Section
- ******************************************************************************/
-
-.publications-section {
-  padding: 0.5rem 0 2rem;
-
-  h2 {
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-    color: var(--global-text-color);
-  }
-
-  .view-all {
-    display: inline-block;
-    margin-top: 0.75rem;
-    font-size: 0.9rem;
-    color: var(--global-theme-color);
-    text-decoration: none;
-
-    &:hover { text-decoration: underline; }
-  }
-}
-
-
-/******************************************************************************
- * Publications & Projects (placeholders)
- ******************************************************************************/

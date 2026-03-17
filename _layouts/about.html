@@ -4,15 +4,10 @@ layout: default
 
 <div class="post">
 
-  <!-- Hero -->
   <div class="about-hero">
     <div class="hero-content">
       <div class="hero-text">
-        <h1 class="hero-name">{{ site.first_name }} {{ site.middle_name }} {{ site.last_name }}</h1>
-
-        {% if page.affiliation %}
-        <p class="hero-affiliation">{{ page.affiliation }}</p>
-        {% endif %}
+        <h1 class="hero-name">{{ site.first_name | downcase }} {{ site.middle_name | downcase }} {{ site.last_name | downcase }}</h1>
 
         <div class="hero-bio">
           {{ content }}
@@ -50,51 +45,19 @@ layout: default
     </div>
   </div>
 
-  <!-- Research Areas -->
-  {% if page.research_areas %}
-  <div class="research-areas">
-    <h2>Research</h2>
-    <div class="areas-grid">
-      {% for area in page.research_areas %}
-      <div class="area-card">
-        <div class="area-title">{{ area.title }}</div>
-        {% if area.description %}
-        <div class="area-description">{{ area.description }}</div>
-        {% endif %}
-      </div>
+  {% if page.papers %}
+  <div class="papers-section">
+    <h2>publications</h2>
+    <ul class="papers-list">
+      {% for paper in page.papers %}
+      <li>
+        <a href="{{ paper.url }}" target="_blank" class="paper-title">{{ paper.title }}</a>
+        <span class="paper-authors">{{ paper.authors }}</span>
+        <span class="paper-venue">{{ paper.venue }}</span>
+      </li>
       {% endfor %}
-    </div>
+    </ul>
   </div>
   {% endif %}
-
-  <!-- Selected papers -->
-  {% if page.selected_papers -%}
-  <div class="publications-section">
-    <h2>Selected Publications</h2>
-    {%- include selected_papers.html %}
-    <a href="{{ '/publications/' | relative_url }}" class="view-all">View all publications &rarr;</a>
-  </div>
-  {%- endif %}
-
-  {% if page.news and site.announcements.enabled -%}
-  <div style="padding: 1rem 0 2rem;">
-    <h2 style="font-size: 1.2rem; font-weight: 600; margin-bottom: 1rem;">News</h2>
-    {%- include news.html limit=true %}
-  </div>
-  {%- endif %}
-
-  {% if page.latest_posts -%}
-  <div style="padding: 1rem 0 2rem;">
-    <h2 style="font-size: 1.2rem; font-weight: 600; margin-bottom: 1rem;">Latest Posts</h2>
-    {%- include latest_posts.html %}
-  </div>
-  {%- endif %}
-
-  {%- if page.social %}
-  <div class="social">
-    <div class="contact-icons">{% include social.html %}</div>
-    <div class="contact-note">{{ site.contact_note }}</div>
-  </div>
-  {%- endif %}
 
 </div>

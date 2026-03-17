@@ -3,48 +3,30 @@
  ******************************************************************************/
 
 :root {
-  --global-bg-color: #faf9f7;
+  --global-bg-color: #faf8f5;
   --global-code-bg-color: #{$code-bg-color-light};
-  --global-text-color: #3d3530;
-  --global-text-color-light: #8a7e76;
-  --global-theme-color: #{$theme-color};
-  --global-hover-color: #3d3530;
+  --global-text-color: #3a3633;
+  --global-text-color-light: #918a82;
+  --global-theme-color: #8b7355;
+  --global-hover-color: #6b5740;
   --global-hover-text-color: #{$white-color};
-  --global-footer-bg-color: #faf9f7;
-  --global-footer-text-color: #8a7e76;
-  --global-footer-link-color: #{$theme-color};
+  --global-footer-bg-color: #faf8f5;
+  --global-footer-text-color: #918a82;
+  --global-footer-link-color: #8b7355;
   --global-distill-app-color: #{$grey-color};
-  --global-divider-color: rgba(93, 74, 58, 0.1);
-  --global-card-bg-color: #f4f1ed;
+  --global-divider-color: #e8e2da;
+  --global-card-bg-color: #f3efe9;
 
-  --global-tip-block: #42b983;
-  --global-tip-block-bg: #e2f5ec;
-  --global-tip-block-text: #215d42;
-  --global-tip-block-title: #359469;
-  --global-warning-block: #e7c000;
-  --global-warning-block-bg: #fff8d8;
-  --global-warning-block-text: #6b5900;
-  --global-warning-block-title: #b29400;
-  --global-danger-block: #c00;
-  --global-danger-block-bg: #ffe0e0;
-  --global-danger-block-text: #600;
-  --global-danger-block-title: #c00;
+  // pastel accents
+  --pastel-sage: #d4dcd0;
+  --pastel-blush: #e8d5cd;
+  --pastel-lavender: #d5cfe0;
+  --pastel-sky: #cdd8e4;
 
-  .fa-sun {
-    display : none;
-  }
-  .fa-moon {
-    padding-left: 10px;
-    padding-top: 12px;
-    display : block;
-  }
-
-  .repo-img-light {
-    display: block;
-  }
-  .repo-img-dark {
-    display: none;
-  }
+  .fa-sun { display: none; }
+  .fa-moon { display: none; }
+  .repo-img-light { display: block; }
+  .repo-img-dark { display: none; }
 }
 
 html[data-theme='dark'] {
@@ -62,19 +44,8 @@ html[data-theme='dark'] {
   --global-divider-color: #424246;
   --global-card-bg-color: #{$grey-900};
 
-  .fa-sun {
-    padding-left: 10px;
-    padding-top: 12px;
-    display : block;
-  }
-  .fa-moon {
-    display : none;
-  }
-
-  .repo-img-light {
-    display: none;
-  }
-  .repo-img-dark {
-    display: block;
-  }
+  .fa-sun { display: none; }
+  .fa-moon { display: none; }
+  .repo-img-light { display: none; }
+  .repo-img-dark { display: block; }
 }
