@@ -2,25 +2,44 @@
 layout: about
 title: about
 permalink: /
-# subtitle: PhD @ Stanford | Previously CS @ MIT
 
 profile:
   align: right
   image: fc_grad25.jpeg
-  image_circular: false # crops the image to make it circular
-  image_size: 1000 # controls the image size
+  image_circular: false
 
-news: false  # includes a list of news items
-latest_posts: false  # includes a list of the newest posts
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: false  # includes social icons at the bottom of the page
+affiliation: >
+  PhD Student, <a href="https://www.stanford.edu/" target="_blank">Stanford University</a> &middot;
+  Department of Biomedical Data Science
+
+links:
+  - label: Email
+    url: mailto:fionacai@stanford.edu
+    icon: fa-solid fa-envelope
+  - label: Google Scholar
+    url: https://scholar.google.com/citations?user=9h7KpuAAAAAJ&hl=en
+    icon: fa-solid fa-graduation-cap
+  - label: LinkedIn
+    url: https://www.linkedin.com/in/fiona-cai/
+    icon: fa-brands fa-linkedin
+  - label: Twitter
+    url: https://twitter.com/fionaxcai
+    icon: fa-brands fa-twitter
+
+research_areas:
+  - title: Medical Imaging & Computer Vision
+    description: Developing representation learning methods for medical imaging tasks, with a focus on improving diagnostic capabilities.
+  - title: Machine Learning for Healthcare
+    description: Building ML systems that improve clinical workflows, from trial recruitment to disease phenotyping.
+  - title: Synthetic Data & Representation Learning
+    description: Leveraging synthetic data generation and contrastive learning to improve performance in low-data regimes.
+
+news: false
+latest_posts: false
+selected_papers: true
+social: false
 ---
----
 
-Hi! I'm a second year PhD student in the Department of Biomedical Data Science at Stanford University where I am fortunate to be advised by <a href="https://emilyalsentzer.com/" target="_blank">Emily Alsentzer</a> and <a href="https://ai.stanford.edu/~syyeung/" target="_blank">Serena Yeung-Levy</a>. My current research interests lie at the intersection of machine learning, computer vision, and representation learning and their applications to healthcare and medical imaging. My work is supported by the <a href="https://www.nsfgrfp.org/" target="_blank"> NSF Graduate Research Fellowship </a>.
+I'm a second year PhD student in the Department of Biomedical Data Science at Stanford University where I am fortunate to be advised by [Emily Alsentzer](https://emilyalsentzer.com/) and [Serena Yeung-Levy](https://ai.stanford.edu/~syyeung/). My current research interests lie at the intersection of machine learning, computer vision, and representation learning and their applications to healthcare and medical imaging. My work is supported by the [NSF Graduate Research Fellowship](https://www.nsfgrfp.org/).
 
-I previously completed my B.S and M.Eng in Computer Science at Massachusetts Institute of Technology (MIT), where I was advised by <a href="https://caml.csail.mit.edu/" target="_blank">Prof. John Guttag</a>.  In the past, I have worked on clinical informatics problems using traditional statistical machine learning approaches for tasks like clinical trial recruitment and probabilistic phenotyping.
-
----
-
-<a href="mailto:fionacai@stanford.edu"> Email </a> / <a href="https://scholar.google.com/citations?user=9h7KpuAAAAAJ&hl=en"> Google Scholar </a> / <a href="https://www.linkedin.com/in/fiona-cai/"> LinkedIn </a> / <a href="https://twitter.com/fionaxcai"> Twitter </a>
+I previously completed my B.S and M.Eng in Computer Science at Massachusetts Institute of Technology (MIT), where I was advised by [Prof. John Guttag](https://caml.csail.mit.edu/). In the past, I have worked on clinical informatics problems using traditional statistical machine learning approaches for tasks like clinical trial recruitment and probabilistic phenotyping.

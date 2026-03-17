@@ -2,80 +2,115 @@
 layout: default
 ---
 
-<!-- about.html -->
-      <div class="post">
-        <header class="post-header">
-          <h1 class="post-title">
-            {% if site.title == "blank" -%}<span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }} {{ site.last_name }}{%- else -%}{{ site.title }}{%- endif %}
-          </h1>
-          <p class="desc">{{ page.subtitle }}</p>
-        </header>
+<!-- about.html — clean evodesign-inspired layout -->
+<div class="post">
 
-        <article>
-          {% if page.profile -%}
-          <div class="profile float-{%- if page.profile.align == 'left' -%}left{%- else -%}right{%- endif -%}">
-            {%- if page.profile.image %}
-              {%- assign profile_image_path = page.profile.image | prepend: 'assets/img/' -%}
+  <!-- Hero Section -->
+  <div class="about-hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1 class="hero-name">
+          {{ site.first_name }} {{ site.middle_name }} {{ site.last_name }}
+        </h1>
 
-              {% if page.profile.image_circular %}
-                {%- assign profile_image_class = "img-fluid z-depth-1 rounded-circle" -%}
-              {% else %}
-                {%- assign profile_image_class = "img-fluid z-depth-1 rounded" -%}
-              {% endif %}
+        {% if page.affiliation %}
+        <p class="hero-affiliation">{{ page.affiliation }}</p>
+        {% endif %}
 
-              {% capture sizes %}(min-width: {{site.max_width}}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px) 30vw, 95vw"{% endcapture %}
-              
-              {% include figure.html
-                path = profile_image_path
-                class = profile_image_class
-                sizes = sizes
-                alt = page.profile.image
-                cache_bust = true 
-              %}
-            {% endif -%}
-            {%- if page.profile.more_info %}
-            <div class="more-info">
-              {{ page.profile.more_info }}
-            </div>
-            {%- endif %}
-          </div>
-          {%- endif %}
+        <div class="hero-bio">
+          {{ content }}
+        </div>
 
-          <div class="clearfix">
-            {{ content }}
-          </div>
+        {% if page.links %}
+        <div class="hero-links">
+          {% for link in page.links %}
+          <a href="{{ link.url }}" target="_blank">
+            {% if link.icon %}<i class="{{ link.icon }}"></i>{% endif %}
+            {{ link.label }}
+          </a>
+          {% endfor %}
+        </div>
+        {% endif %}
+      </div>
 
-          <!-- News -->
-          {% if page.news and site.announcements.enabled -%}
-            <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit;">news</a></h2>
-            {%- include news.html limit=true %}
-          {%- endif %}
+      {% if page.profile and page.profile.image %}
+      <div class="hero-image">
+        {%- assign profile_image_path = page.profile.image | prepend: 'assets/img/' -%}
+        {% if page.profile.image_circular %}
+          {%- assign profile_image_class = "img-fluid rounded-circle" -%}
+        {% else %}
+          {%- assign profile_image_class = "img-fluid" -%}
+        {% endif %}
+        {% capture sizes %}(min-width: {{site.max_width}}) 280px, 200px{% endcapture %}
+        {% include figure.html
+          path = profile_image_path
+          class = profile_image_class
+          sizes = sizes
+          alt = page.profile.image
+          cache_bust = true
+        %}
+      </div>
+      {% endif %}
+    </div>
+  </div>
 
-          <!-- Latest posts -->
-          {% if page.latest_posts -%}
-            <h2><a href="{{ '/blog/' | relative_url }}" style="color: inherit;">latest posts</a></h2>
-            {%- include latest_posts.html %}
-          {%- endif %}
+  <!-- Research Areas -->
+  {% if page.research_areas %}
+  <div class="research-areas">
+    <h2>Research</h2>
+    <div class="areas-grid">
+      {% for area in page.research_areas %}
+      <div class="area-card">
+        {% if area.image %}
+        <img src="{{ area.image | prepend: 'assets/img/' | relative_url }}" alt="{{ area.title }}" class="area-image">
+        {% endif %}
+        <div class="area-content">
+          <div class="area-title">{{ area.title }}</div>
+          {% if area.description %}
+          <div class="area-description">{{ area.description }}</div>
+          {% endif %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  {% endif %}
 
-          <!-- Selected papers -->
-          {% if page.selected_papers -%}
-            <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">selected publications</a></h2>
-            {%- include selected_papers.html %}
-          {%- endif %}
+  <!-- Selected papers -->
+  {% if page.selected_papers -%}
+  <div class="publications-section">
+    <h2>Selected Publications</h2>
+    {%- include selected_papers.html %}
+    <a href="{{ '/publications/' | relative_url }}" class="view-all">View all publications &rarr;</a>
+  </div>
+  {%- endif %}
 
-          <!-- Social -->
-          {%- if page.social %}
-            <div class="social">
-              <div class="contact-icons">
-                {% include social.html %}
-              </div>
+  <!-- News -->
+  {% if page.news and site.announcements.enabled -%}
+  <div class="news-section" style="padding: 1rem 0 3rem;">
+    <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 1.5rem;">News</h2>
+    {%- include news.html limit=true %}
+  </div>
+  {%- endif %}
 
-              <div class="contact-note">
-                {{ site.contact_note }}
-              </div>
+  <!-- Latest posts -->
+  {% if page.latest_posts -%}
+  <div class="posts-section" style="padding: 1rem 0 3rem;">
+    <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 1.5rem;">Latest Posts</h2>
+    {%- include latest_posts.html %}
+  </div>
+  {%- endif %}
 
-            </div>
-          {%- endif %}
-        </article>
+  <!-- Social -->
+  {%- if page.social %}
+  <div class="social">
+    <div class="contact-icons">
+      {% include social.html %}
+    </div>
+    <div class="contact-note">
+      {{ site.contact_note }}
+    </div>
+  </div>
+  {%- endif %}
 
 </div>
