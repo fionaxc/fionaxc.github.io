@@ -6,16 +6,16 @@
   --global-bg-color: #ffffff;
   --global-code-bg-color: #{$code-bg-color-light};
   --global-text-color: #000000;
-  --global-text-color-light: #8a8279;
-  --global-theme-color: #7d6b57;
-  --global-hover-color: #5c4d3e;
+  --global-text-color-light: #444444;
+  --global-theme-color: #000000;
+  --global-hover-color: #333333;
   --global-hover-text-color: #{$white-color};
   --global-footer-bg-color: #ffffff;
-  --global-footer-text-color: #8a8279;
-  --global-footer-link-color: #7d6b57;
+  --global-footer-text-color: #444444;
+  --global-footer-link-color: #000000;
   --global-distill-app-color: #{$grey-color};
-  --global-divider-color: #e6e1db;
-  --global-card-bg-color: #f5f2ee;
+  --global-divider-color: #cccccc;
+  --global-card-bg-color: #f5f5f5;
 
   .fa-sun { display: none; }
   .fa-moon { display: none; }
