@@ -47,10 +47,10 @@ body.sticky-bottom-footer { padding-bottom: 0; }
   .hero-text { flex: 1; }
 
   .hero-image {
-    flex: 0 0 260px;
+    flex: 0 0 320px;
     @media (max-width: 768px) {
       flex: 0 0 auto;
-      width: 190px;
+      width: 240px;
       margin: 0 auto;
     }
     img {
@@ -74,7 +74,7 @@ body.sticky-bottom-footer { padding-bottom: 0; }
     color: var(--global-text-color);
     p { margin-bottom: 0.75rem; }
     p:last-child {
-      color: var(--global-text-color-light);
+      color: var(--global-text-color);
       font-size: 0.95rem;
     }
     a {
@@ -86,14 +86,14 @@ body.sticky-bottom-footer { padding-bottom: 0; }
 
   .hero-links {
     margin-top: 1.25rem;
-    font-size: 0.88rem;
-    color: var(--global-text-color-light);
+    font-size: 0.9rem;
+    color: var(--global-text-color);
 
     a {
-      color: var(--global-text-color-light);
-      text-decoration: none;
+      color: var(--global-text-color);
+      text-decoration: underline;
       transition: color 0.15s;
-      &:hover { color: var(--global-theme-color); }
+      &:hover { color: var(--global-hover-color); }
     }
   }
 }
@@ -108,9 +108,9 @@ body.sticky-bottom-footer { padding-bottom: 0; }
 
   h2 {
     font-size: 0.95rem;
-    font-weight: 500;
+    font-weight: 600;
     margin-bottom: 0.75rem;
-    color: var(--global-text-color-light);
+    color: var(--global-text-color);
     text-transform: lowercase;
   }
 }
@@ -120,9 +120,9 @@ body.sticky-bottom-footer { padding-bottom: 0; }
 
   h2 {
     font-size: 0.95rem;
-    font-weight: 500;
+    font-weight: 600;
     margin-bottom: 0.75rem;
-    color: var(--global-text-color-light);
+    color: var(--global-text-color);
     text-transform: lowercase;
     font-style: italic;
   }
@@ -153,7 +153,7 @@ ul.papers-list {
 
     .paper-meta {
       font-size: 0.88rem;
-      color: var(--global-text-color-light);
+      color: var(--global-text-color);
       line-height: 1.5;
     }
   }
