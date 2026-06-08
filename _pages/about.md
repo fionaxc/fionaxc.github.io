@@ -38,11 +38,6 @@ papers:
     venue: ACS Biomaterials Science & Engineering, 2021
     url: http://dx.doi.org/10.1021/acsbiomaterials.1c00800
 
-projects:
-  - title: alphaDOM
-    description: reinforcement learning agent trained to play the board game dominion
-    url: https://github.com/fionaxc/alphaDOM
-
 news: false
 latest_posts: false
 selected_papers: false
